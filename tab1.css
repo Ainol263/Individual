@@ -1,0 +1,33 @@
+.tab1 {
+    float: hidden;
+    border: 1px solid #354a21;
+    background-color: #354a21;
+  }
+
+  .tab1 button {
+    background-color: inherit;
+    float: left;
+    color: wheat;
+    padding: 20px 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+ 
+  .tab1 button:hover {
+    background-color: #607d3b;
+  
+  }
+  .tab1 button.active {
+    background-color: #354a21;
+  }
+  
+  .tabcontent1 {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #98bf64;
+    border-top: none;
+  }

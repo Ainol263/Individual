@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<head>
+    <title>Ainol Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Bungee Shade">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="cut.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="collap.css">
+    <link rel="stylesheet" href="tab1.css">
+
+    <style>
+        hr.dotted {
+            border-top: 5px dotted #688f4e;
+        
+        }
+        h1 {
+            border-right: solid 3px #688f4e;
+            background-color: #8ca566;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 28px;
+            color: black;
+            margin: 0 auto;
+        }
+        h1{
+            animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms
+            steps(29,end) infinite;
+        }
+        @keyframes animated-text {
+            from{width: 0;}
+            to{width: 560px;}
+        }
+        @keyframes animated-cursor{
+            from{border-right-color: #688f4e;}
+            to{border-right-color: transparent;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 class="texts" style="font-size: 50px;">😊Assalamualaikum😊</h1>
+        </div>
+    </div>
+    
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void (0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#experience">WORK EXPERIENCE</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <div id="main">
+        <span class="span" style="font-size: 50px;cursor: pointer;" onclick="openNav()">&#9776;</span>
+    </div>
+    <a name= "home"></a>
+    <div class="card">
+        <img src="me.jpg" alt="Myself" style="width: 100%">
+        <h2>AINOL SYAKIRAH SARUDIN</h2>
+        <p class="title">Energetic and cheerful person</p>
+        <div style="margin: 24px 0;">
+        <a href="https://twitter.com/anlsykirh"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/ainolsyakirah426/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_syakirahsarudin/"><i class="fa fa-instagram"></i></a>
+        <a href="https://wa.link/l27el6"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <br>
+    
+    <center><video width="40%" controls>
+        <source src="AINOL SYAKIRAH VIDEO RESUME.mp4" type="video/mp4">
+    </video></center>
+
+   <br>
+   <br>
+   <br>
+   <hr class="dotted">
+   <hr class="dotted">
+   <hr class="dotted">
+   <br>
+   <br>
+   <br>
+   <a name= "about"></a>
+   <div class="image-container">
+    <div class="text">ABOUT</div>
+</div>
+<div class="row" style="font-family: 'Bungee Shade';">
+    <div class="column" onclick="openTab('b1');" style="background: #8ca566;">
+        Myself
+    </div>
+    <div class="column" onclick="openTab('b2');" style="background: #8ca566;">
+        Family
+    </div>
+    <div class="column" onclick="openTab('b3');" style="background: #8ca566;">
+        Friends
+    </div>
+</div>
+
+<div id="b1" class="containerTab" style="display: none; background: #688f4e;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <center><h2 style="font-family: 'Bungee Shade';">Myself</h2>
+    <img src="me1.jpg" alt="Myself" style="width: 250px;">
+    <p style="font-family: 'Trirong';">
+    My name is Ainol Syakirah Binti Sarudin (called by Ainol, Syakirah, Kiki and Kiah)
+    <br>
+    I am 21 Years Old and was born at Hospital KPJ Shah Alam on 4th March 2000
+    <br>
+    I am living at No.9, Jalan Kunang-Kunang 20/8, Seksyen 20, 40300 Shah Alam, Selangor
+    <br>
+    I am just an extra-hyper and multi feeling person that willingly to do anything to make my surrounding happy!
+    <br>
+    Here I share a few things that I love to read, listen and watch.
+    </p></center>
+    <center>
+    <button type="button" class="collapsible" style="font-family: Trirong;">CRIME CASES</button>
+        <div class="content1">
+            <p>
+                <img src="crime.jpg" alt="crime" width="30%">
+                <br>
+                Three cases that keep running on my nuggin' and keep give me gruesome. Killer keep running around us, 
+                we just need to be ready to defend ourselves and do not trust people easily. 
+                <br>
+                All the information can get at murderpedia.org
+                <br>
+                <b style="color: red;">WARNING! THE CONTENT MIGHT BE SENSITIVE</b>
+                <div class="tab1">
+                    <button class="tablinks" onclick="openCrime(event, 'ted')">TED BUNDY</button>
+                    <button class="tablinks" onclick="openCrime(event, 'issei')">ISSEI SAGAWA</button>
+                    <button class="tablinks" onclick="openCrime(event, 'ed')">EDWARD THEODORE GEIN</button>
+                </div>
+                  
+                  <div id="ted" class="tabcontent1">
+                    <h3>Ted Bundy, genius killer</h3>
+                    <img src="ted.jpg" alt="ted bundy" width="30%">
+                    <p>
+                       Theodore Robert Bundy or known as Ted Bundy was born on November 24, 1946 at Burlington, Vermont, United State
+                       <br>
+                       Died on January 24, 1989 at Starke, Florinda by electric chair.
+                       <br>
+                       He was one of American serial Killer and rapist.
+                       <br>
+                       His target was girls and young women.
+                       <br>
+                       He was successful student with his intelligence and great on social skills.
+                       <br>
+                       With advantages that he got, he used it as weapon to get his victims.
+                       <br>
+                       One of his agenda to get the victim was pretending that he was bad injured and needed help to get to his car.
+                       The victim who was innocent, just follow him and never guess that he had bad intention.
+                       <br>
+                       Got knock by the metal bar to death, and raped at the same time.
+                       <br>
+                       <img src="ted1.jpg" alt="victims" width="40%">
+                       <br>
+                       He was sentenced to death due to case that he rape and murder 12 years old girl.
+                    </p>
+                  </div>
+                  
+                  <div id="issei" class="tabcontent1">
+                    <h3>Issei Sagawa, Cannibalism</h3>
+                    <img src="issei.jpg" alt="issei" width="40%">
+                    <p>
+                        Issei Sagawa is born on June 11, 1949 in Kobe, and a wealthy parents.
+                        <br>
+                        He was a student in University of Paris but on June 11, 1981
+                        Issei Sagawa invited Renee Hartevelt, one of his classmate for a dinner at 
+                        his house and to further their discussion about the subject they learn before.
+                        Upon her arrival, he shot her in the neck with a rifle while she sat with her back at him,
+                        once she is not breathing, he start his plan to eat her. Because of the lack of love himself,
+                        by saying that he is a weak, ugly and small, make him want to absord Renee energy by eating her 
+                        cause of her health, beauty and tall than him.
+                        <br>
+                        By looking at Renee, he start his plan with having sex with the corpse then begin to eat her hips 
+                        legs. He said that he shocked with the corn-colored of human fat. He also described the meat as soft 
+                        and odorless like tuna. He cut out all the pieces that he want to eat and after 2 days dumb the remain at the lake,
+                        but was seen in the act and arrested by the French police. 
+                        <br>
+                        <img src="issei1.jpg" alt="meat" width="40%">
+                        <img src="renee.jpg" alt="renee" width="40%">
+                        <br>
+                        French judge, Jean-Louis Bruguieres found him legally insane and unfit to stand trial and ordered 
+                        Sagawa to be held in a mental institution. Sagawa likely to contributed to the French authorities' decision to have 
+                        him extradited to Japan. In Japan, he was taken to Matsuzawa hospital, where examining psychologist found him to be sane 
+                        but 'evil'
+                        <br>
+                        However, Japanese authorities found it to be legally impossible to hold him, due to lacked certain important papers from the 
+                        French court. Sagawa checked himself out of the mental institution on August 12, 1986 and has been a free man till this day.
+                        On 2013, Sagawa was hospitalized from a cerebral infarction, which damaging his nervous system.
+                    </p> 
+                  </div>
+                  
+                  <div id="ed" class="tabcontent1">
+                    <h3>Silent Killer, Edward Theodore Gein</h3>
+                    <img src="ed.jpg" alt="edward" width="40%">
+                    <p>
+                        Edward Theodore Gein, or Edward Gein was born on August 27, 1906. He was an American Murderer and body 
+                        snatcher. He was doing his crimes around his hometown of Plainfield, Wisconsin.
+                        <br>
+                        Police have found body parts in his house in 1957, and that time Gein have confessed that he had kill 2 women ; 
+                        Mary Hogan in 1954 and Bernice Worden in 1957 who reportly were missing before found them in Ed's house.
+                        <br>
+                        Body of Bernice Worden was found in Gein's shed, hung upside down by ropes at her wrists, with a crossbar at her ankles.
+                        The torso was "dressed out" like that of a deer. She had been shot with a rifle.
+                        <ul>
+                            <img src="mask.jpg" alt="mask by ed" width="40%">
+                            <br>
+                        The police have found :
+                        <li>Noses</li>
+                        <li>Whole human bones and fragments</li>
+                        <li>9 masks of human skin</li>
+                        <li>Bowls made from human skulls</li>
+                        <li>10 female heads with the tops sawed off</li>
+                        <li>Human skin covering several chair seats</li>
+                        <li>Mary Hogan's head in a burlap sack</li>
+                        <li>9 vulvas in a shoe box</li>
+                        <li>Skulls on his bedsposts</li>
+                        <li>Organs in the refrigerator</li>
+                        <li>A pair of lips on draw string for a windowshad</li>
+                        <li>A belt made from human female nipples</li>
+                        <li>A lampshade made from the skin from a human face</li>
+                        </ul>
+                        <br>
+                        Gein admitted robbing 9 graves, to full-filled his desire to make as many artifacts he want.
+                        Shortly after his mother's death on December 29, 1945 with a series of strokes, Gein had decided he wanted a sex change 
+                        and began to create a "woman suit" so he can pretend to be a woman.
+                        <br>
+                        On July 26, 1984, Gein died of respiratory and heart failure due to cancer in Goodland Hall at the Mendota Mental Health Institute.
+                        His grave was site in the Plainfield cemetery.
+                    </p>
+                  </div>
+            </p>
+        </div>
+    <button type="button" class="collapsible" style="font-family: Trirong;">HORROR</button>
+        <div class="content1">
+            <p>
+                <img src="horror.jpg" alt="crime" width="30%">
+                <br>
+                <div class="tab1">
+                    <button class="tablinks" onclick="openCrime(event, 'wall')">WALLPAPER</button>
+                    <button class="tablinks" onclick="openCrime(event, 'guard')">GUARDIANS</button>
+                    <button class="tablinks" onclick="openCrime(event, 'red')">RED</button>
+                </div>
+                  
+                  <div id="wall" class="tabcontent1">
+                    <h3>My new house</h3>
+                    <p>
+                        We bought an old house, my boyfriend and I. He's in charge of the "new" 
+                        construction – converting the kitchen in to the master bedroom for instance, 
+                        while I'm on wallpaper removal duty. The previous owner papered EVERY wall and 
+                        CEILING! Removing it is brutal, but oddly satisfying. The best feeling is getting 
+                        a long peel, similar to your skin when you're peeling from a sunburn. I don't know 
+                        about you but I kinda make a game of peeling, on the hunt for the longest piece before 
+                        it rips.Under a corner section of paper in every room is a person’s name and a date. 
+                        Curiosity got the best of me one night when I Googled one of the names and discovered 
+                        the person was actually a missing person, the missing date matching the date under the 
+                        wallpaper! The next day, I made a list of all the names and dates. Sure enough each name 
+                        was for a missing person with dates to match. We notified the police who naturally sent 
+                        out the crime scene team. I overhead one tech say "yup, it's human." Human? What's human? 
+                        "Ma'am, where is the material you removed from the walls already? This isn't wallpaper you 
+                        were removing." 
+                        <br>
+                        <b> by BatoutofHell821</b>
+                    </p>
+                  </div>
+                  
+                  <div id="guard" class="tabcontent1">
+                    <h3>Wrong Thought</h3>
+                    <p>
+                        He awoke to the huge, insect like creatures looming over his bed and screamed his lungs 
+                        out. They hastily left the room and he stayed up all night, shaking and wondering if it 
+                        had been a dream.The next morning, there was a tap on the door. Gathering his courage, 
+                        he opened it to see one of them gently place a plate filled with fried breakfast on the 
+                        floor, then retreat to a safe distance. Bewildered, he accepted the gift. The creatures 
+                        chittered excitedly.This happened every day for weeks. At first he was worried they were 
+                        fattening him up, but after a particularly greasy breakfast left him clutching his chest 
+                        from heartburn, they were replaced with fresh fruit. As well as cooking, they poured hot 
+                        steamy baths for him and even tucked him in when he went to bed. It was bizarre.One night, 
+                        he awoke to gunshots and screaming. He raced downstairs to find a decapitated burglar being 
+                        devoured by the insects. He was sickened, but disposed of the remains as best he could. He 
+                        knew they had just been protecting him.One morning the creatures wouldn't let him leave his 
+                        room. He lay down, confused but trusting as they ushered him back into bed. Whatever their 
+                        motives, they weren't going to hurt him.Hours later a burning pain spread throughout his body. 
+                        It felt like his stomach was filled with razor wire. The insects chittered as he spasmed and 
+                        moaned. It was only when he felt a terrible squirming feeling beneath his skin that he realised 
+                        the insects hadn't been protecting him. They had been protecting their young. 
+                        <br>
+                        <b>by DarkAlliGator</b>
+                    </p> 
+                  </div>
+                  
+                  <div id="red" class="tabcontent1">
+                    <h3>Aura</h3>
+                    <p>
+                        Everyone loves the first day of school, right? New year, new classes, new friends. It's a day 
+                        full of potential and hope, before all the dreary depressions of reality show up to ruin all 
+                        the fun.I like the first day of school for a different reason, though. You see, I have a sort 
+                        of power. When I look at people, I can...sense a sort of aura around them. A colored outline 
+                        based on how long that person has to live. Most everyone I meet around my age is surrounded by 
+                        a solid green hue, which means they have plenty of time left.A fair amount of them have a 
+                        yellow-orangish tinge to their auras, which tends to mean a car crash or some other tragedy. 
+                        Anything that takes people "before their time" as they say.The real fun is when the auras 
+                        venture into the red end of the spectrum, though. Every now and again I'll see someone who's 
+                        basically a walking stoplight. Those are the ones who get murdered or kill themselves. It's 
+                        such a rush to see them and know their time is numbered.With that in mind, I always get to 
+                        class very early so I can scout out my classmates' fates. The first kid who walked in was 
+                        basically radiating red. I chuckled to myself. Too damn bad, bro. But as people kept walking 
+                        in, they all had the same intense glow. I finally caught a glimpse of my rose-tinted reflection 
+                        in the window, but I was too stunned to move. Our professor stepped in and locked the door, his 
+                        aura a sickening shade of green. 
+                        <br>
+                        <b>by Zenryhao</b>
+                    </p>
+                  </div>
+            </p>
+        </div>
+    <button type="button" class="collapsible" style="font-family: Trirong;">K-POP MUSIC</button>
+        <div class="content1">
+            <p>
+                <img src="kpop.jpg" alt="crime" width="30%">
+                <br>
+                <div class="tab1">
+                    <button class="tablinks" onclick="openCrime(event, '17')">SEVENTEEN</button>
+                    <button class="tablinks" onclick="openCrime(event, 'bp')">BLACKPINK</button>
+                    <button class="tablinks" onclick="openCrime(event, 'bb')">BIG BANG</button>
+                    <button class="tablinks" onclick="openCrime(event, 'sj')">SUPER JUNIOR</button>
+                </div>
+                  
+                  <div id="17" class="tabcontent1">
+                    <h3>SAY THE NAME, SEVENTEEN</h3>
+                    <img src="svt.jpg" alt="seventeen" width="50%">
+                    <p>
+                        Korean Idol group that full with 13 members, with 3 group units.
+                        <br>
+                        They made their debut on May 26, 2015 with song Adore You
+                        <br>
+                        They are group under Pledis entertainment, along with After School and Nuest
+                        <br>
+                        They got first win on May 4, 2016 with song, Pretty U
+                        <br>
+                        They name their fans, CARAT with colors, Rose Quartz and Serenity
+                        <br>
+                        Members based on their year of birth :
+                        Scoups (Choi Seung Cheol)
+                        Jeonghan (Yoon Jeong Han)
+                        Joshua (Hong Ji Soo)
+                        Jun (Moon Jun Hwi)
+                        Hoshi (Kwon Soon Young)
+                        Wonwoo (Jeon Won Woo)
+                        Woozi (Lee Ji Hoon) - Producer / Song Writer
+                        The8 (Seo Myung Ho)
+                        DK/Dokyeom (Lee Seok Min)
+                        Mingyu (Kim Min Gyu)
+                        Seungkwan (Boo Seung Kwan)
+                        Vernon (Choi Han Sol)
+                        Dino (Lee Chan)
+                        <br>
+                        This two is my ultimate bias in Seventeen and both is Chinese Nationalities
+                        <br>
+                        <img src="the8.jpg" alt="the8" width="20%">
+                        <img src="jun.jpg" alt="jun" width="20%">
+                        
+                    </p>
+                  </div>
+                  
+                  <div id="bp" class="tabcontent1">
+                    <h3>BLACKPINK IN YOUR AREA</h3>
+                    <img src="bp.jpg" alt="blackpink" width="42.5%">
+                    <img src="jnli.jpg" alt="jenlisa" width="30%">
+                    <p>
+                        Blackpink is a girl group korean idol which consist of 4 members
+                        <br>
+                        Jennie, Jisoo, Rose, and Lisa
+                        <br>
+                        They debut on August 8, 2016 under YG Entertainment and signed with U.S. label Interscope
+                        Records on October 23, 2018
+                        <br>
+                        Their fandom name is BLINK
+                        <br>
+                        They got first win was after thirteen days of their debut with song, Whistle
+                    </p> 
+                  </div>
+                  
+                  <div id="bb" class="tabcontent1">
+                    <h3>KING OF YG, BIG BANG</h3>
+                    <img src="bb.jpg" alt="bigbang" width="50%">
+                    <img src="gd.jpg" alt="gdragon" width="20%">
+                    <p>
+                        The legendary Big Bang is a worldwide famous korean boy group
+                        <br>
+                        They debut on August 19, 2006 under YG Entertainment but on March 11, 2019,
+                        one of the member were announced that he left the entertainment industry.
+                        <br>
+                        Fandom : VIP with Yellow crown light-sticks
+                        <br>
+                        The group consist 4 members
+                        <br>
+                        Kwon Ji Young (G-Dragon)
+                        Born on August 18, 1988
+                        <br>
+                        Choi Seung Hyun (TOP)
+                        Born on November 4, 1987
+                        <br>
+                        Dong Yong Bae (Taeyang)
+                        May 18, 1988
+                        <br>
+                        Kang Dae Sung (Daesung)
+                        April 26, 1989
+                        <br>
+                        Lee Seung Hyun (Seungri)
+                        December 12, 1990
+
+                    </p>
+                  </div>
+
+                  <div id="sj" class="tabcontent1">
+                    <h3>KING OF KPOP, SUPER JUNIOR</h3>
+                    <img src="sj.jpg" alt="super junior" width="50%">
+                    <img src="heechul.jpg" alt="kim heechul" width="50%">
+                    <p>
+                        SUPER JUNIOR is a group that debut on November 6, 2005 under SM entertainment
+                        which known as the longest exist kpop group among others
+                        <br>
+                        Fandom : ELF (Ever Lasting Friends)
+                        Color : Pearl Sapphire Blue
+                        <br>
+                        Overall, Super Junior consist 15 members with different units
+                        <br>
+                        Park Jung Soo (Leeteuk)
+                        Kim Hee Chul (Heechul)
+                        Kim Jong Woon (Yesung)
+                        Shin Dong Hee (Shindong)
+                        Lee Hyuk Jae (Eunhyuk)
+                        Choi Si Won (Siwon)
+                        Lee Dong Hae (Donghae)
+                        Kim Ryeo Wook (Ryeowook)
+                        Cho Kyu Hyun (Kyuhyun)
+                        Lee Sung Min (Sungmin)
+                        Zhou Mi 
+                        Kim Young Woon (Kangin)
+                        Yoo Heon Hwa (Henry)
+                        Hankyung (Han Geng)
+                        Kim Ki Bum (Kibum)
+                    </p>
+                  </div>
+            </p>
+        </div>
+    
+    </center>
+</div>
+
+
+<div id="b2" class="containerTab" style="display: none; background: #688f4e;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <center><h2 style="font-family: 'Bungee Shade';">Family</h2>
+    <img src="fam.jpg" alt="family" style="width: 50%;">
+    <p style="font-family: 'Trirong';">
+    This is my family!
+    <br>
+    The tree house start with my dad, Sarudin Bin Noordin, 52 years old who is from <i>Bandar Bersejarah</i> Malacca.
+    <br>
+    Next is my mom, Maisarah binti Rahman, 50 years old and she was born at Sekinchan, Selangor but grown up at Jengka 15, Pahang
+    <br>
+    <img src="sib.jpg" alt="sibling" style="width: 50%;">
+    <br>
+    Going to skip me! First up, my younger sister. Ainul Syauqina binti Sarudin, 18 years old and freshly graduate from SPM 2020
+    <br>
+    Last, my youngest sister, Ainul Syamsina binti Sarudin, 14 years old. 
+    <br>
+    Three of us was born at the same place, which near with our home. 
+    </p>
+    <img src="moi.jpg" alt="amoi" style="width:30%;">
+    <p style="font-family: 'Trirong';">
+    Introducing to you, this is my cousin who I treat her like my own sister.
+    <br>
+    Her name is Nurul Izzati binti Tajuddin, 26 years old and work as frontliner at Aurora Clinic
+    </p>
+    <img src="yau.jpg" alt="yayau" style="width: 30%;">
+    <p style="font-family: 'Trirong';">
+    This is my fiance and my nephew. They both incharge on cheering me up everytime I was down and sad. 
+    <br>
+    Fiance, Muhammad Alif Aidil Adha bin Othman Zailani
+    <br>
+    Nephew, Aisy Syazwan bin Aiman Syahmi
+    </p>
+</center>
+</div>
+
+<div id="b3" class="containerTab" style="display: none; background-image: url('bck1.jpg')";>
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <center><h2 style="font-family: 'Bungee Shade';">Friends</h2>
+    <div class="rrow" style="font-family: 'Trirong';">
+        <div class="ccolumn">
+            <div class="ccontent">
+                <img src="dassas.jpg" alt="dassas" style="width: 60%;">
+                <h2>Best Bud</h2>
+                <p>
+                My longest fangirls and supporters till now!
+                <br>
+                Ain, Shikin, Nisya, Deena and Wana
+                </p>
+            </div>
+        </div>
+        <div class="ccolumn">
+            <div class="ccontent">
+                <img src="whi.jpg" alt="whisk team" style="width: 100%;">
+                <h2>Work Mates</h2>
+                <p>
+                Let me introduce who they are
+                <br>
+                Kak Arissa, Abang Isma, Kak Reen, Kak Wan and Abang Azizi
+                </p>
+            </div>
+        </div>
+        <div class="ccolumn">
+            <div class="ccontent">
+                <img src="kim120.jpg" alt="DIPLOMA" style="width: 100%;">
+                <h2>KIM120 TEAM</h2>
+                <p>
+                One big problematic family!
+                </p>
+            </div>
+        </div>
+        <div class="ccolumn">
+            <div class="ccontent">
+                <img src="whis.jpg" alt="whisk" style="width: 100%;">
+                <h2>Another Whisk Team reunion!</h2>
+                <p> Visiting one of our friend's home is such a bless!
+                </p>
+            </div>
+        </div>
+        <div class="ccolumn">
+            <div class="ccontent">
+                <img src="dobot.jpg" alt="mirul" style="width: 70%;">
+                <h2>Best Guy Friend Ever!</h2>
+                <p>
+                Mirul aka dobot
+                <br>
+                He lost his jawline due to Covid-19.
+                We do not have a picture together because of how 'shy shy cat' he is
+                </p>
+            </div>
+        </div>
+        <div class="ccolumn">
+            <div class="ccontent">
+                <img src="we.jpg" alt="we" style="width: 100%;">
+                <h2>GroupMate for Life!</h2>
+                <p>
+                Here we have Dayah the Potato girl
+                <br>
+                Dayana, one and only Tempe
+                <br>
+                Insyirah, the energy of Happiness
+                <br>
+                And me, Ainol the Kedondong Lover 
+                </p>
+            </div>
+        </div>
+    </center>
+</div>
+
+   <br>
+   <br>
+   <br>
+   <hr class="dotted">
+   <hr class="dotted">
+   <hr class="dotted">
+   <br>
+   <br>
+   <br>
+<a name="education"></a>
+<div class="image-container">
+    <div class="text">EDUCATION</div>
+</div>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>SEKOLAH KEBANGSAAN SEKSYEN 20</h2>
+                <img src="sks20.jpg" alt="sks20" style="width: 50%;">
+                <p>
+                 Address : <br>
+                 Sekolah Kebangsaan Seksyen 20, Jalan Rama-rama 20/2, Seksyen 20, 40300 Shah Alam
+                 <br>
+                 School : 2006-2012 (preschool till standard 6)
+                 <br> 
+                 Position : <br>
+                 Librarian (2010-2012)
+                 <br>
+                 Athlete : <br>
+                 Runner, Netballer, Handballer, Hockey player
+                 <br>
+                 Extra information: <br>
+                 Involve on dancing competition and join singing contest under school.
+                 <br>
+                 Got 5A's for UPSR 
+                </p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>SEKOLAH MENENGAH KEBANGSAAN SEKSYEN 19</h2>
+                <img src="smks19.jpg" alt="smks19" style="width: 50%;">
+                <p>
+                    Address : <br>
+                    Sekolah Menengah Kebangsaan Seksyen 19, Jalan Gelora 19/16, Seksyen 19, 40300 Shah Alam
+                    <br>
+                    School : 2013-2017 (Form 1 till Form 5)
+                    <br>
+                    Position :
+                    <br>
+                    Librarian- Access Room (2013-2016)
+                    <br>
+                    <i>Pembimbing Rakan Sebaya</i> (2016-2017)
+                    <br>
+                    Achievement :
+                    <br>
+                    PT3 : 3A 6B 1C
+                    <br>
+                    SPM : 4A 3B 2C 1E
+                    <br>
+                    Highest marks for Subject ICT's SPM, under SMK Seksyen 19
+                    <br>
+                    Experience :
+                    <br>
+                    Be a performer (dance) on Recycle Day, Teacher's Day, <i>Hi-Tea Pengawas SMK Seksyen 19</i> and Cocurricular's Day
+                    <br>
+                    Facilitator for Science Week
+                    <br>
+                    Involving in shortfilm competition, school and international level
+                </p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>UiTM CAWANGAN KEDAH</h2>
+                <img src="uitmk.jpg" alt="uitm kedah" style="width: 75%;">
+                <p>
+                    Address : UiTM Cawangan Kedah, Kampus Sungai Petani, 08400 Merbok, Kedah
+                    <br>
+                    Diploma in Library Management (2018-2020)
+                    <br>
+                    Position : In Association of Library Management (Kedah)
+                    <br>
+                    Sports exco (Semester 1 - Semester 2)
+                    <br>
+                    Vice President (Semester 3)
+                    <br>
+                    President (Semester 4)
+                    <br>
+                    Achievement :
+                    <br>
+                    Bronze Award on Indelib Program
+                    <br>
+                    GPA / CGPA
+                    <br>
+                    Semester 1 : 3.27 / 3.27
+                    <br>
+                    Semester 2 : 3.52 / 3.40
+                    <br>
+                    Semester 3 : 3.55 / 3.45
+                    <br>
+                    Semester 4 : 3.54 / 3.47
+                    <br>
+                    Experience :
+                    <br>
+                    Participate MASMED's program to Spritzer's Factory, Antong Sdn Bhd and Jeruk Pak Ali's Factory
+                    <br>
+                    Participate on <i>Program Rumah Warga Emas (PAWE)</i>
+                    <br>
+                    Be part as facilitator for Motivation Camp under Faculty Information Management
+                    <br>
+                    Conduct my own event under ALiM
+                </p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>UiTM CAWANGAN PUNCAK PERDANA</h2>
+                <img src="uitmpp.jpg" alt="uitmpp" style="width: 75%;">
+                <p>
+                    Address : UiTM Cawangan Puncak Perdana, Jalan Pulau Indah Au10/A, Puncak Perdana, 40150 Shah Alam
+                    <br>
+                    Bachelor of Information Science (Hons) Library Management (2021- )
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <hr class="dotted">
+    <hr class="dotted">
+    <hr class="dotted">
+    <br>
+    <br>
+    <br>
+    <a name="experience"></a>
+    <div class="image-container">
+        <div class="text" style="font-size: 440%;"> WORK EXPERIENCE</div>
+    </div>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>De PALMA BANQUET TEAM</h2>
+                <img src="depalma.jpg" alt="depalma" style="width: 50%;">
+                <p>
+                    <b>2014-2017</b>
+                    <ul>
+                        <i>Catering Team</i> 
+                        <li>Serving the guest (food and beverage)</li>
+                        <li>For event : Wedding and hi-tea</li>
+
+                        <i>Break fasting event</i>
+                        <li>Be part of in-charge person to usher guest to their table</li>
+                        <br>
+                        <i style="color: darkred;">What did I learn</i>
+                        <li>Be punctual especially the time</li>
+                        <li>Follow the instruction given by the leader</li>
+                        <li>Be polite and do not downgrade others</li>
+                        <li>Be responsible and considerable</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>WHISK INGREDIENTS SDN. BHD.</h2>
+                <img src="whisk.jpg" alt="whisk" style="width: 50%;">
+                <p>
+                    <b>2018-2021</b>
+                    <ul>
+                        <i>Packaging part</i> 
+                        <li>Knowing various type of ingredients</li>
+                        <li>Get to taste something new</li>
+
+                        <i>Customer Service</i>
+                        <li>Help customer to find the ingredients they wanted</li>
+                        <li>Give the best suggestion to the customer</li>
+                        <li>Giving the best services to the customer</li>
+                        <li>Part of the cashier team</li>
+                        <br>
+                        <i style="color: darkred;">What did I learn</i>
+                        <li>Need to work quickly and do not be lazy</li>
+                        <li>Need to keep hygiene</li>
+                        <li>Bond a bold relationship among staff</li>
+                        <li>Need to be positive and considerable</li>
+                </p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>PERBADANAN PERPUSTAKAAN AWAM SELANGOR</h2>
+                <img src="ppas.jpg" alt="ppas" style="width: 60%;">
+                <p>
+                    <b>Jan 2020 - Feb 2020</b>
+                    <ul>
+                        <i>Internship</i>
+                        <li>Cataloging Department</li>
+                        <li>Collection Department</li>
+                        <li>Reference Department</li>
+                        <li>Customer Services</li>
+                        <li>Development and Maintenance Department</li>
+                        <li>Corporate Department</li>
+                        <br>
+                        <i style="color: darkred;">What did I learn</i>
+                        <li>Job scope in library is wide</li>
+                        <li>Be open-minded</li>
+                        <li>Be good at communication skill</li>
+                        <li>Participate by giving opinion</li>
+                        <li>Work-hard and always be tidy</li>
+                        <li>Ready to learn something new</li>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr class="dotted">
+    <hr class="dotted">
+    <hr class="dotted">
+    <br>
+    <br>
+    <br>
+    <a name="skills"></a>
+    <div class="image-container">
+        <div class="text">SKILLS</div>
+    </div>
+    <div class="rows">
+        <div class="columns">
+            <div class="card">
+                <h3 style="font-family: 'Bungee';">Soft Skill</h3>
+                <p style="font-family: 'Trirong';">
+                    Effective Communication
+                    <br>
+                    Open mindedness
+                    <br>
+                    Teamwork
+                    <br>
+                    Willingly to learn
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="card">
+                <h3 style="font-family: 'Bungee';">Soft Skill</h3>
+                <p style="font-family: 'Trirong';">
+                    Creativity
+                    <br>
+                    Flexibility
+                    <br>
+                    Leadership
+                    <br>
+                    Empathy
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="card">
+                <h3 style="font-family: 'Bungee';">Technical Skill</h3>
+                <p>
+                    <ul style="font-family: 'Trirong';">
+                        <b>Multilingual</b>
+                        <li>Malay</li>
+                        <li>English</li>
+                        <li>Japanese</li>
+                        <li>Korean</li>
+                    
+                        <br>
+                        <b>Typing speed</b>
+                        <br>
+                    
+                        <b>Computer Programming</b>
+                        <li>Basic HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>VScode</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="card">
+                <h3 style="font-family: 'Bungee';">Technical Skill</h3>
+                <p>
+                    <ul style="font-family: 'Trirong';">
+                        <b>Adobe software</b>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                        <br>                    
+                        <b>Microsoft Software</b>
+                        <li>Word</li>
+                        <li>Powerpoint</li>
+                        <li>Excel</li>
+                        <br>
+                        <b>Canva Application</b>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr class="dotted">
+    <hr class="dotted">
+    <hr class="dotted">
+    <br>
+    <br>
+    <br>
+    <a name="contact"></a>
+    <div class="image-container">
+        <div class="text">CONTACT</div>
+    </div>
+    <center>
+    <div class="rowss">
+        <div class="columnss" style="background-color: #688f4e;">
+        <h2>CONTACT ME THROUGH</h2>
+            <a href="https://www.facebook.com/ainolsyakirah426/" class="fb btn"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/anlsykirh" class="twitter btn"><i class="fa fa-twitter"></i></a>
+            <a href="https://wa.link/l27el6" class="whatsapp btn"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/_syakirahsarudin/" class="instagram btn"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    </center>
+    
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft= "250px";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    <script>
+        function openTab (tabName) {
+            var i, x;
+            x = document.getElementsByClassName ("containerTab");
+            for (i=0; i < x.length; i++) {
+                x[i].style.display="none";
+            }
+            document.getElementById (tabName).style.display="block";
+        }
+    </script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+        var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+        content.style.display = "block";
+            }
+        });
+        }
+    </script>
+    <script>
+       function openCrime(evt, crimeName) {
+        var i, tabcontent1, tablinks;
+        tabcontent1 = document.getElementsByClassName("tabcontent1");
+        for (i = 0; i < tabcontent1.length; i++) {
+            tabcontent1[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(crimeName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+    
+</body>
+</html>

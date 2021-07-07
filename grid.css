@@ -1,0 +1,26 @@
+.rrow {
+    margin: 8px -14px;
+}
+.rrow,
+.rrow > .ccolumn {
+    padding: 6px;
+}
+.ccolumn {
+    float: right;
+    width: 35%;
+    
+}
+.rrow::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.ccontent{
+    background-color: wheat;
+    padding: 10px;
+}
+@media screen and (max-width:900px) {
+    .ccolumn{
+        width: 50%;
+    }
+}

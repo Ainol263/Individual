@@ -1,0 +1,49 @@
+.columnss {
+    float: none;
+    width: 50%;
+}
+.rowss:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .columnss {
+        width: 100%;
+    }
+}
+input, .btn {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+input:hover, .btn:hover {
+    opacity: 5;
+}
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+  
+  .whatsapp {
+    background-color: forestgreen;
+    color: white;
+}
+  .instagram {
+      background-color: #125688;
+      color: white;
+}
+
